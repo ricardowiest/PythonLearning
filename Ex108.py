@@ -1,4 +1,4 @@
-from uteis import moeda
+from uteis.utilidade import moeda
 
 p = float(input('Digite o preço do produto: '))
 print(f'A metade de {moeda.moeda(p)} é {moeda.moeda(moeda.metade(p))}')

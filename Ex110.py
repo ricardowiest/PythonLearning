@@ -1,4 +1,4 @@
-from uteis import moeda
+from uteis.utilidade import moeda
 
-pr = int(input('Digite o valor R$'))
+pr = float(input('Digite o valor R$'))
 moeda.resumo(pr, 25, 6)
