@@ -22,13 +22,13 @@ def moeda(x=0, moeda='R$'):
     return f'{moeda}{x:>3.2f}'.replace('.', ',')
 
 
-def resumo(x=0, tax=0 , red=0):
-    print('-'*30)
+def resumo(x=0, tax=0, red=0):
+    print('-' * 30)
     print('       RESUMO DO VALOR')
-    print('-'*30)
+    print('-' * 30)
     print(f'Preço analisado: \t{moeda(x)}')
-    print(f'Dobro do preço: \t{dobro(x , True)}')
-    print(f'A metade do preço: \t{metade(x , True)}')
-    print(f'{tax}% de aumento: \t{aumento(x, tax , True)}')
-    print(f'{red}% de redução: \t\t{dim(x, red, True)}')
-    print('-'*30)
+    print(f'Dobro do preço: \t{dobro(x, True)}')
+    print(f'A metade do preço: \t{metade(x, True)}')
+    print(f'{tax}% de aumento: \t{aumento(x, tax, True)}')
+    print(f'{red}% de redução: \t{dim(x, red, True)}')
+    print('-' * 30)
