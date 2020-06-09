@@ -10,15 +10,22 @@ def leiadin(x): #para valor monetario
 
 
 def leiaInt(num):
-    ok = False  # criado para validar
-    valor = 0
     while True:
-        n = str(input(num))
-        if n.isnumeric():
-            valor = int(n)
-            ok = True
+        try:
+            n = int(input(num))
+        except Exception as erro:
+            print(f'\033[1:31:40mERRO: Digite um valor inteiro válido. ERRO TIPO: {erro.__class__}\033[m')
+            continue
         else:
-            print('ERRO! Digite um número válido!')
-        if ok:
-            break
-    return valor
+            return n
+
+
+def leiaReal(x):
+    while True:
+        try:
+            n = float(input(x))
+        except Exception as erro:
+            print(f'\033[1:31:40mERRO: Digite um valor inteiro válido. TIPO: {erro.__class__}\033[m')
+            continue
+        else:
+            return n
