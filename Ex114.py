@@ -8,3 +8,4 @@ except Exception as erro:
 else:
     print('\033[1:31:40mSite ONLINE e com acesso.\033[m')
     print(site.read())
+
