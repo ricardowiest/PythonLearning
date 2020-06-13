@@ -1,0 +1,4 @@
+Beatriz;7
+Toy;9
+Daniela;36
+Ricardo;32

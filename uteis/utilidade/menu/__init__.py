@@ -23,9 +23,14 @@ def menu(x):
     print(linha())
 
 
-def esc1(x):
-    sleep(1.5)
-    menu()
+def ler(x):
+    try:
+        a = open(x, 'rt')
+    except FileNotFoundError:
+        return False
+    else:
+        menu('PESSOAS CADASTRADAS')
+        print(a.read())
 
 
 def esc2(x):
