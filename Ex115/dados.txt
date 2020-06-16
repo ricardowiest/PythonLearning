@@ -1,4 +1,5 @@
 Beatriz;7
-Toy;9
 Daniela;36
-Ricardo;32
+Ricardo ;32
+João;50
+Jose Bezerra;50

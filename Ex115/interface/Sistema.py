@@ -12,7 +12,10 @@ while True:
         menu.ler(arq)
         sleep(1)
     elif resp == 2:
-        menu.menu('OPÇÃO 2')
+        menu.menu('Novo Cadastro')
+        nome = str(input('Digite o nome: '))
+        idade = menu.leiaInt(input('Digite a idade: '))
+        menu.cadastro(arq, nome, idade)
         sleep(1)
     elif resp == 3:
         menu.menu('SAINDO DO PROGRAMA...')
