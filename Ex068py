@@ -1,0 +1,28 @@
+from random import randint
+c=n=pc=soma=res=0
+e='A'
+print('**'*25)
+print('Jogo do PAR ou ÍMPAR.')
+print('**'*25)
+while True:
+    while e not in 'PI':
+        e = str(input('Digite [P] para par ou [I] para ímpar: ')).strip().upper().split()[0]
+    n=int(input('Digite o número de sua escolha: '))
+    print('=-'*25)
+    pc=randint(0,10)
+    soma=n+pc
+    res=(n+pc)%2
+    print(f'O computador escolheu {pc}')
+    if res==0 and e=='P':
+        print(f'Você ganhou. A soma total foi {soma}, número PAR')
+        print('Vamos continuar jogando...')
+        c+=1
+    if res!=0 and e=='I':
+        print(f'Você ganhou. A soma total foi {soma}, número ÍMPAR')
+        print('Vamos continuar jogando...')
+        c+=1
+    print('-'*50)
+    if res==0 and e=='I' or res!=0 and e=='P':
+        print(f'Você perdeu. Que pena...a soma dos números é {soma} e não é {e} [P=PAR/I=ÍMPAR]')
+        break
+print(f'\033[1:31mVocê ganhou {c} vezes.\033[m')
