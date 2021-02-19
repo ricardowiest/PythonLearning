@@ -1,0 +1,8 @@
+a1=input('Digite algo: ')
+print ('O tipo de caractere é ',type(a1))
+print ('É numerico? ',a1.isnumeric())
+print ('É alfabético? ',a1.isalpha())
+print ('É alfanumerico? ',a1.isalnum())
+print ('É decimal? ',a1.isdecimal())
+print ('É maiúsculo? ',a1.isupper())
+print ('É minúsculo? ', a1.islower ())
